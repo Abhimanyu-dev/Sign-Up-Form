@@ -1,3 +1,144 @@
 :root{
     font-family: sans-serif;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    display: flex;
+}
+
+@font-face {
+    font-family: norse;
+    src: url('./Font/Norse-Bold.otf');
+}
+.left-container{
+    flex-shrink: 0;
+    height: 100vh;
+    width: 40%;
+    background: url('./Images/background.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-container{
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 6rem;
+    font-family: norse, sans-serif;
+}
+
+.con2{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    opacity: 100%;
+}
+
+.logo-container > img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.right-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.warning{
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.form-container{
+    margin-top: 2rem;
+    height: 50%;
+    width: 100%;
+
+}
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.con{
+    border: 0.5px solid rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 15px 24px;
+}
+p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+label{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:rgba(0,0,0, 0.5);
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+input{
+    height: 1.5rem;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+input:valid{
+    border-color:aqua;
+}
+input:invalid{
+    border-color:crimson;
+}
+.submit-btn{
+    margin: 2rem;
+    width: 100%;
+}
+button{
+    height: 3rem;
+    width: 40%;
+    font-size: 1.5rem;
+    background-color:darkolivegreen;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.account{
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.account span{
+    color:darkolivegreen;
+    cursor: pointer;
 }
